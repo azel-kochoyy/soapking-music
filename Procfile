@@ -1,1 +1,1 @@
-worker: python3 -m callsmusic
+worker: python3 -m soapking-music
