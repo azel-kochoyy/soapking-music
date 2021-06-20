@@ -21,7 +21,7 @@ async def pause(_, message: Message):
     ) if (
         callsmusic.pause(get_chat_id(message.chat))
     ) else (
-        await message.reply_text('<b>❌ Nothing is playing</b>', False)
+        await message.reply_text('<b>❌ DARI TADI DONG BGST</b>', False)
     )
 
 
@@ -34,7 +34,7 @@ async def resume(_, message: Message):
     ) if (
         callsmusic.resume(get_chat_id(message.chat))
     ) else (
-        await message.reply_text('<b>❌ Nothing is paused</b>', False)
+        await message.reply_text('<b>❌ DARI TADI DONG BGST</b>', False)
     )
 
 
@@ -44,14 +44,14 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.active_chats:
-        await message.reply_text('<b>❌ Nothing is playing</b>', False)
+        await message.reply_text('<b>❌ MINUM DULU SEREK NYANYI MULU</b>', False)
     else:
         try:
             queues.clear(chat_id)
         except QueueEmpty:
             pass
         await callsmusic.stop(chat_id)
-        await message.reply_text('<b>⏹ Stopped streaming</b>', False)
+        await message.reply_text('<b>MENGSTOP MUSIK</b>', False)
 
 
 @Client.on_message(command('skip') & other_filters)
@@ -60,7 +60,7 @@ async def stop(_, message: Message):
 async def skip(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.active_chats:
-        await message.reply_text('<b>❌ Nothing is playing</b>', False)
+        await message.reply_text('<b>❌ MENGSKIP</b>', False)
     else:
         queues.task_done(chat_id)
         if queues.is_empty(chat_id):
