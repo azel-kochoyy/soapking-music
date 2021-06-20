@@ -9,9 +9,9 @@ from ..helpers.filters import other_filters2
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_text(
-        f'<b>👋🏻 Hi {message.from_user.mention()}!</b>\n\n'
-        'I am Calls Music bot, '
-        'I let you play music in group calls.'
+        f'<b>👋🏻 Hi ngent {message.from_user.mention()}!</b>\n\n'
+        'aku soapking music bot, '
+        'aku bisa nyanyi di vcg.'
         '\n\nThe commands I currently support are:\n\n'
         '/play - play the replied audio file or YouTube video\n'
         '/pause - pause the audio stream\n'
