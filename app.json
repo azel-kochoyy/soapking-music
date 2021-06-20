@@ -5,7 +5,7 @@
   "repository": "https://github.com/azel-kochoyy/soapking-music",
   "env": {
     "SESSION_NAME": {
-      "description": "A Pyrogram session string.",
+      "description": "A String pyrogram bukan telethon!.",
       "required": true
     },
     "BOT_TOKEN": {
