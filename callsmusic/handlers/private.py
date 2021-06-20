@@ -13,12 +13,12 @@ async def start(_, message: Message):
         'aku soapking music bot, '
         'aku bisa nyanyi di vcg.'
         '\n\nThe commands I currently support are:\n\n'
-        '/play - play the replied audio file or YouTube video\n'
-        '/pause - pause the audio stream\n'
-        '/resume - resume the audio stream\n'
-        '/skip - skip the current audio stream\n'
-        '/mute - mute the userbot\n'
-        '/unmute - unmute the userbot\n'
+        '/play - untuk ngeplay ya anjing\n'
+        '/pause - mancing ikan \n'
+        '/resume - mesum\n'
+        '/skip - nyekip\n'
+        '/mute - diem\n'
+        '/unmute - ngomong\n'
         '/stop - clear the queue and remove the userbot from the call',
         reply_markup=InlineKeyboardMarkup(
             [
