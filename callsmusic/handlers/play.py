@@ -22,7 +22,7 @@ async def play(_, message: Message):
     audio = (
         message.reply_to_message.audio or message.reply_to_message.voice
     ) if message.reply_to_message else None
-    response = await message.reply_text('<b>🔄 Processing...</b>', False)
+    response = await message.reply_text('<b>Bentar nyari...</b>', False)
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
@@ -74,7 +74,7 @@ async def play(_, message: Message):
             url = text_links[0].url
         else:
             await response.edit_text(
-                '<b>❌ You did not give me anything to play</b>',
+                '<b>MASUKIN JUDUL NYA NGENTOD</b>',
             )
             return
 
